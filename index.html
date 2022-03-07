@@ -4,38 +4,111 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
+  <!-- <meta name="viewport" content="width=device-width; user-scalable=yes"> -->
+
+
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./style.css">
+
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
-  <title>Frontend Mentor | Tip calculator app</title>
+  <title>VArustomyan | Tip calculator app</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
+    .attribution { display:none; font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
 <body>
 
-  Bill
+	<h1><img  class="logo" src='./images/logo.svg' alt="logo"></h1>
+	
+	
+	<main>
 
-  Select Tip %
-  5%
-  10%
-  15%
-  25%
-  50%
-  Custom
+		<div class="container">
+			<div class="bill">
+				<div class="bill-wrapper">
+					<h2 class="bill-label">Bill</h2>
+					<span class="error-bill">Enter more than 0</span>
+				</div>
+				<input type="number" class="bill-input input" placeholder="0" >
+				
+			</div>
 
-  Number of People
+			<div class="tip">
+				<h2 class="tip-label">Select Tip %</h2>
+				
+				<ol class="ol">
+					<li><button class="btn tip-btn" value='5' >5%</button></li>
+					<li><button class="btn tip-btn" value='10'>10%</button></li>
+					<li><button class="btn tip-btn" value='15'>15%</button></li>
+					<li><button class="btn tip-btn" value='25'>25%</button></li>
+					<li><button class="btn tip-btn" value='50'>50%</button></li>
+					<li><input type="number"  class="tip-input input" placeholder="Custom"> </li>
+				</ol>
+				
+				<span class="tip-error">Enter more than 0</span>
+			</div>
 
-  Tip Amount
-  / person
+	
+	<!-- 
+			<div class="tip">
+				<h2 class="tip-label">Select Tip %</h2>
+				<div class="tip-btn-wrapper"> 
+					<button class="btn tip-btn" value='5' >5%</button>
+					<button class="btn tip-btn" value='10'>10%</button>
+					<button class="btn tip-btn" value='15'>15%</button>
+					<button class="btn tip-btn" value='25'>25%</button>
+					<button class="btn tip-btn" value='50'>50%</button>
+					<input type="number"  class="tip-input input" placeholder="Custom"> 
+				</div>
+				<span class="tip-error">Enter more than 0</span>
 
-  Total
-  / person
+			</div>
+ -->
+			<div class="count-people">
+				<div class="count-people-wrapper">
+					<h2 class="count-people-label ">Number of People</h2>
+					<span class="error_enteger">Must be an integer</span>
+					<span class="error_zero">Enter more than 0</span>
+				</div>
+				<input type="number" class="count-people-input input" placeholder="0">
+			</div>
+		</div>
 
-  Reset
-  
+		<div class="container-total">
+			<div class="total-wrapper">
+				<div class="tip-amount">
+				<div class="tip-amount-wrapper">
+					<h2 class="tip-amount-label">Tip Amount</h2>
+					<h3>/ person</h3>
+				</div>
+				<p class="tip-amount-tip">$0.00</p>
+			</div>
+
+			<div class="total">
+				<div class="total-wrapper">
+					<h2 class="total-label">Total</h2>
+					<h3>/ person</h3>
+				</div>
+				<p class="total-amount-total">$0.00</p>
+			</div>
+			</div>
+			
+
+			<button class="reset btn" disabled>RESET</button>
+		</div>
+		
+  </main>
+
+  <!DOCTYPE html>
+
+
+  <script src="./main.js"></script>
+
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
