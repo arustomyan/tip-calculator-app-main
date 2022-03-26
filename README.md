@@ -27,7 +27,7 @@ Users should be able to:
 ### Screenshot
 
 ![](https://github.com/varustomyan/tip-calculator-app-main/blob/f23c2f1a872a1b09f8ccb7e53ce890659cb53209/images/screenshot-web.png)
-![](images\screenshot-mobile.png)
+![](https://github.com/varustomyan/tip-calculator-app-main/blob/f23c2f1a872a1b09f8ccb7e53ce890659cb53209/images/screenshot-web.png)
 
 ### Links
 
