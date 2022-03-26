@@ -11,20 +11,12 @@ const countInput = document.querySelector('.count-people-input');
 const countErrorZero = document.querySelector('.error_enteger');
 const countErrorInteger = document.querySelector('.error_zero');
 
-
-
-
-
 const reset = document.querySelector('.reset');
-
-
-
 
 let tip = 0;
 let bill = 0;
 let countPeople = 0;
 
-// console.log(tipBtn)
 
 for (let i = 0; i < tipBtn.length; i++) {
     tipBtn[i].addEventListener('click', () => {
@@ -65,7 +57,6 @@ function validationCount(value) {
         countErrorZero.classList.remove('error-show')
         countErrorInteger.classList.remove('error-show')
         countInput.classList.remove('input-error')
-        // calculateTip(0, 0, 1)
         return true;
 
     } else if (value <= 0  ) {
@@ -77,7 +68,6 @@ function validationCount(value) {
 } 
 
 billInput.oninput = () => {
-    // console.log(billInput.value)
     reset.disabled = false;
     bill = Number(billInput.value)
     if (validationZero(billInput.value, billError, billInput)) {
@@ -112,7 +102,6 @@ function calculateTip(bill, tip, count) {
         let total  = (bill+tipAmountPerson*count)/count;
         document.querySelector('.tip-amount-tip').innerHTML = `$${Number(tipAmountPerson).toFixed(2)}`;
         document.querySelector('.total-amount-total').innerHTML = `$${Number(total).toFixed(2)}`;
-        // console.log('bill: ' + bill + ' |tip: ' + tip + ' |count: ' + count)
     }
 }
 
@@ -132,3 +121,4 @@ reset.addEventListener('click', () => {
     document.querySelector('.tip-amount-tip').innerHTML = `$0.00`;
     document.querySelector('.total-amount-total').innerHTML = `$0.00`;
 })
+
