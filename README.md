@@ -46,6 +46,6 @@ Users should be able to:
 
 ## Author
 
-- Frontend Mentor - [@varustomyan](https://www.frontendmentor.io/profile/varustomyane)
+- Frontend Mentor - [@varustomyan](https://www.frontendmentor.io/profile/varustomyan)
 - TG - [@varustomyan](https://t.me/varustomyan)
 
